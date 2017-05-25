@@ -17,6 +17,11 @@
 		a {
 			color: $color__link;
 		}
+		p {
+			color: $color__alttext;
+			margin-left: 5px;
+			margin-top: 0;
+		}
 	}
 
 	.container {
@@ -180,4 +185,17 @@
 		footer h3 {
 			display: none;
 		}
+}
+
+@media screen and (max-width: 320px) {
+	.article__services--type p {
+		max-width: 80%;
+	}
+	.article__feature img {
+		max-width: 300px;
+		height: auto;
+	}
+	::-webkit-input-placeholder {
+		font-size: 0.8em;
+	}
 }
