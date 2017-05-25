@@ -1,0 +1,70 @@
+// Footer Styles
+footer {
+	background: $color__footer;
+	color: $color__alttext;
+	font-family: $font__title;
+	margin: 0;
+	padding:1em 0 2em;
+	p {
+		color: $color__alttext;
+		margin: 0;
+		padding-top: 1.5em;
+
+	}
+}
+.footer__container__outer {
+	width: 60%;
+	margin: 0 auto;
+}
+.footer__container {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 1rem;
+	border-bottom: 1px solid rgba(255,255,255,0.6);
+}
+
+footer nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	a {
+		padding:0.5rem;
+	}
+}
+
+footer nav a {
+	transition: all 0.2s;
+}
+footer nav a:hover {
+	text-decoration: underline;
+}
+
+/* Email Sign-Up Form*/
+form {
+	display: flex;
+	justify-content: center;
+	width: 50%;
+}
+
+input[type=submit] {
+	background: $color__cta;
+	border: none;
+	color: $color__footer;
+	font-family: $font__title;
+	padding: 0.55rem 0.5rem;
+	}
+
+input[type=email] {
+	background:$color__footer;
+	border:1px solid rgba(255,255,255,0.6);
+	border-right: none;
+	color: $color__alttext;
+	outline: none;
+	padding: 0.5rem;
+	width: 100%;
+}
+
+::-webkit-input-placeholder {
+	color: $color__alttext;
+	font: $font__text;
+}

@@ -1,0 +1,83 @@
+// Articles
+.container__default {
+	margin: 1em 10em;
+	h2 {
+		padding-top: 1em;
+	}
+	h3 {
+		font-family: $font__title;
+	}
+	h4 {
+		border-bottom: 1px solid $color__link;
+		padding-bottom: 1em;
+	}
+}
+
+// About Us Styles
+.article__about {
+	p {
+		max-width: 60%;
+	}
+}
+.gold {
+	color:#E5C100;
+}
+.article__image {
+	display: flex;
+	img {
+		max-width: 250px;
+		max-height: 300px;
+	}
+}
+
+// Directions Styles
+.google__map {
+	margin-top: 3em;
+	 position: relative;
+        padding-bottom: 40%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+}
+.google__map iframe {
+	 position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+}
+
+// Offers Styles
+.article__image__fridge {
+	display: flex;
+	img {
+		align-self: center;
+		max-width: 100%;
+		height: 200px;
+	}
+}
+
+.article__image__content {
+	align-self: center;
+	h3 {
+		font-family: $font__title;
+		font-weight: bold;
+	}
+}
+
+// Reservation Styles
+.hero__reservation {
+	background: url('../images/summer-hires.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	p, h4 {
+		color: $color__alttext;
+	}
+}
+.article__reservations {
+	text-align: center;
+	h4 {
+	border-bottom: 1px solid $color__link;
+	margin-bottom: 2em;
+	padding-bottom: 1em;
+	}
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		 <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>{{ page.title }}</title>
+		<link rel="stylesheet" href="stylesheets/main.css">
+		<style> html {height: 100%;}</style>
+	</head>
+
+	<body>
+		<main>
+		<header>
+				<nav>
+					<ul  class="nav nav--default" id="menu">
+					<li><a href="offers.html">Offers</a></li>
+					<li><a href="./#accomodations">Accomodations</a></li>
+					<li><a href="./#ammenities">Services & Ammenities</a></li>
+					<li class="nav__logo">
+						<a href="./">
+							<h3>Gallager Estates</h3>
+							<p>Bed & Breakfast</p>
+						</a>
+					</li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="directions.html">Directions</a></li>
+					<li class="nav__reservation"><a href="reservations.html">Make a Reservation</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="container__default">
+		{{ content }}
+		</div>
+		</main>
+		<footer>
+			<div class="footer__container__outer">
+				<div class="footer__container">
+					<h3>Collingwood</h3>
+					<form>
+						<input type="email" name="email" placeholder="Enter your email address for promotions & news">
+						<input type="submit" value="SIGN UP">
+					</form>
+				</div>
+				<p>&copy 2017 Gallagher Estates Bed & Breakfast, LLC. All Rights Reserved</p>
+				<nav>
+					<ul>
+						<li><a href="#">Careers</a></li>
+						<li><a href="#">Terms of Use</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Leadership Center</a></li>
+					</ul>
+				</nav>
+			</div>
+		</footer>
+		<script  src="https://code.jquery.com/jquery-3.2.1.min.js"  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="  crossorigin="anonymous"></script>
+		<script src="./js/jquery.slicknav.min.js"></script>
+		<script>
+			$(function(){
+				$('#menu').slicknav();
+			});
+		</script>
+	</body>
+</html>

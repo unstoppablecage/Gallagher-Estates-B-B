@@ -1,0 +1,56 @@
+// Service Article Styles
+.article__services {
+	padding: 0;
+	margin-bottom: 2em;
+	p {
+		color: $color__alttext;
+	}
+}
+.article__services h2 {
+	border-top: 2px solid $color__link;
+	border-bottom:2px solid $color__link;
+	color: $color__title;
+	text-align: center;
+	padding: 1em 0;
+}
+
+.article__services--type {
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	h3{
+		font-family: $font__title;
+		font-size: 2.25em;
+	}
+	p {
+		font-size: 0.9em;
+		line-height: 2;
+		max-width: 60%;
+	}
+}
+.article__services__container {
+	color: $color__alttext;
+	display: flex;
+	height: 45vh;
+	.article__services__shuttle {
+		background-image: url('../images/junker.jpg');
+		flex:1 35%;
+	}
+	.article__services__view {
+		background-image: url('../images/house.jpg');
+		flex-basis:35%;
+	}
+	.article__services__mess {
+		background-image: url('../images/fastfoodmess.jpg');
+		flex:1 30%;
+	}
+}
+
+.article__services img {
+	max-width: 100%;
+	height: auto;
+}

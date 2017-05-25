@@ -1,0 +1,26 @@
+// Feature Article Styles
+.article__feature {
+	align-items: center;
+	background: $color__secondary;
+	display: flex;
+	justify-content: space-around;
+	img {
+		height: 400px;
+		width: auto;
+	}
+	p {
+		color: $color__alttext;
+	}
+}
+
+.article__feature__text {
+	flex-basis: 30%;
+	text-align: center;
+	h2 {
+		color:$color__link;
+		font-size: 2rem;
+	}
+	p {
+		line-height: 1.5;
+	}
+}

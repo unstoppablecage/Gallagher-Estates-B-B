@@ -1,0 +1,41 @@
+// Ammenity Article Section Styles
+.article__ammenities {
+	padding: 0 0 4em 0;
+		h2 {
+			border-top: 2px solid $color__link;
+	     		border-bottom:2px solid $color__link;
+			color: $color__title;
+			text-align: center;
+			font-family: $font__title;
+			font-size:2em;
+			padding: 1em 0;
+		}
+}
+
+.article__ammenities img {
+	width: 275px;
+	height: 200px;
+}
+
+.article__container {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 5em;
+	max-width: 100%;
+	section {
+		background:#fff;
+		box-shadow:0px 0px 20px rgba(0,0,0,0.2);
+		font-family: $font__text;
+		font-size:0.9em;
+		line-height: 1.5;
+		max-width: 275px;
+		padding:10px;
+		text-align: left;
+		h4 {
+			font-family: $font__title;
+			font-size:1.5em;
+			padding-top: 1em;
+			text-align: left;
+		}
+	}
+}

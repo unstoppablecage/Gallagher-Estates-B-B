@@ -1,0 +1,50 @@
+// Normalize Default Styles
+html, body {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	padding:0;
+	margin:0;
+}
+
+body {
+	min-height: 100%;
+}
+
+main {
+	// for sticky footer
+	flex: 1;
+}
+
+a {
+	color:inherit;
+	text-decoration: none;
+}
+p {
+	color: $color__text;
+	line-height: 1.5;
+}
+article {
+	padding: 1em 0;
+}
+article p, article a {
+	font-family: $font__text;
+}
+article a {
+	color:$color__link;
+}
+
+ul {
+	list-style-type: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+	font-family: $font__title;
+}
+
+h2 {
+	font-family: $font__title;
+	font-size: 2em;
+	padding: 1.25em 0;
+}

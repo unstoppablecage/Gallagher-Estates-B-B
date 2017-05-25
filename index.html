@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gallagher Estates Bed & Breakfast</title>
+	<link rel="stylesheet" href="stylesheets/main.css">
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<nav>
+				<ul  class="nav nav--homepage" id="menu">
+					<li><a href="offers.html">Offers</a></li>
+					<li><a href="./#accomodations">Accomodations</a></li>
+					<li><a href="./#ammenities">Services & Ammenities</a></li>
+					<li class="nav__logo">
+						<a href="./">
+							<h3>Gallager Estates</h3>
+							<p>Bed & Breakfast</p>
+						</a>
+					</li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="directions.html">Directions</a></li>
+					<li class="nav__reservation"><a href="">Make a Reservation</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div class="hero">
+			<div class="hero__title">
+				<p class="hero__intro">WELCOME TO</p>
+				<h1>Gallagher Estates Bed & Breakfast</h1>
+				<p>Where Dreams Meet Reality</p>
+			</div>
+			<div class="hero__inner"></div>
+		</div>
+	</div>
+
+	<article class="article__description">
+		<div class="article__description__text">
+			<h3>About Us</h3>
+			<p>Ever wondered what it would be like to live out your wildest fantasies? Wonder no more! At Gallagher Estates we provide a magical combination of uncompromising customer "satisfaction" and ammenities few people can even dream of! From our famous home-cooked (McDonalds) breakfasts, to our museum of ancient fridge organisms, there is certainly something here for the entire family!</p>
+		</div>
+		<blockquote>
+			"You Always Left Me Satisfied and Smiling!"
+			<p>Anonymous Cuban Man</p>
+		</blockquote>
+	</article>
+
+	<article class="article__ammenities" id="ammenities">
+		<h2>Ammenities for All Ages</h2>
+		<div class="article__container">
+			<section class="article__ammenity">
+				<img src="./images/elf.jpg" alt="Elf Costume">
+				<div>
+					<h4>Costumes For All!</h4>
+					<p>Ever wanted to dress up like a freak but scared to do it in public? You're in luck , we have a vast collection of outfits no sane human would ever consider wearing. Perfect for playing dressup or cow/elf roleplay!</p>
+					<a href="">Read More</a>
+				</div>
+			</section>
+			<section class="article__ammenity">
+				<img src="./images/odor.jpg" alt="Odor in Fridge">
+				<div>
+					<h4>Edible Exhibits</h4>
+					<p>Curious what two year old spinach looks like? How about 6 month old tomato? No need to wonder anymore. We have the only national exhibit for rotting and desecrated foods, right here in our refridgerator!!</p>
+					<a href="">Read More</a>
+				</div>
+			</section>
+			<section class="article__ammenity">
+				<img src="./images/fastfood.jpg" alt="Fast Food">
+				<div>
+					<h4>Food For Thought!</h4>
+					<p>One of our signature offerings is our extensive mealplan. Whether it's our classic Egg McMuffin breakfast, our Quarter Pounder lunch buffet, or our slow cooked Big Mac dinners, you can bet we serve only the best food around!</p>
+					<a href="">Read More</a>
+				</div>
+			</section>
+		</div>
+	</article>
+
+	<article class="article__feature">
+		<div class="article__feature__text">
+			<h2>The Personal Touch</h2>
+			<p>Want to meet new people? We have the solution. Gallagher Estates proudly presents "Mystery Nights." Every Friday, Saturday, Sunday , (sometimes Mon, Tues , Wed, etc) between the hours of 2 and 5am we invite one (or many)  random people to socialize/ other activities! "What about the kids?", you ask, you my friend are in luck , each child has the chance to play "Count the Shoes" each morning to see which lucky strangers have stayed the night! Prizes not included</p>
+		</div>
+		<img src="./images/shoepile.jpg" alt="Pile of shoes">
+	</article>
+
+	<article class="article__services" id="accomodations">
+		<h2>"Service with a Smile"</h2>
+		<div class="article__services__container">
+			<div class="article__services__shuttle article__services--type">
+				<h3>Shuttle Service 24/7</h3>
+				<p>Whether it's wind, rain, sleet, or snow, you can count on our complimentary shuttle  service to be there for you!</p>
+			</div>
+			<div class="article__services__view article__services--type">
+				<h3>A View To Die For</h3>
+				<p>The wonder of nature is just minutes from your front door, when you stay at Gallagher Estates!</p>
+			</div>
+			<div class="article__services__mess article__services--type">
+				<h3>For Your Convience</h3>
+				<p>Worried about getting up having to clean up after yourself? At Gallagher Estates we enforce a strict "Ground is for Garbage" policy. Now you can relax and let nature run its course </p>
+			</div>
+		</div>
+	</article>
+	<footer>
+		<div class="footer__container__outer">
+			<div class="footer__container">
+				<h3>Collingwood</h3>
+				<form>
+					<input type="email" name="email" placeholder="Enter your email address for promotions & news">
+					<input type="submit" value="SIGN UP">
+				</form>
+			</div>
+			<p>&copy 2017 Gallagher Estates Bed & Breakfast, LLC. All Rights Reserved</p>
+			<nav>
+				<ul>
+					<li><a href="#">Careers</a></li>
+					<li><a href="#">Terms of Use</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Leadership Center</a></li>
+				</ul>
+			</nav>
+		</div>
+	</footer>
+	<script  src="https://code.jquery.com/jquery-3.2.1.min.js"  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="  crossorigin="anonymous"></script>
+	<script src="./js/jquery.slicknav.min.js"></script>
+	<script>
+		$(function(){
+			$('#menu').slicknav();
+		});
+	</script>
+</body>
+</html>

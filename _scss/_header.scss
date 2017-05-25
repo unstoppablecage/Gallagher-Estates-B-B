@@ -1,0 +1,97 @@
+// Header and Hero Styles
+
+
+// Navigation Styles
+.nav {
+	font-family: $font__text;
+	font-size: 0.9em;
+	display: flex;
+	justify-content: space-around;
+	margin: 0;
+	padding: 2em 2em 3em 2em;
+	text-transform: uppercase;
+	a {
+		transition: all 0.2s;
+	}
+	.nav__logo {
+		align-self: center;
+		flex-basis: 20%;
+		font-family: $font__title;
+		text-align: center;
+		h3 {
+			font-size:1.25em;
+		}
+		p {
+			color: #C6C6C6;
+			margin-top: 0;
+		}
+	}
+	.nav__reservation {
+		color: $color__cta;
+		font-weight:bold;
+	}
+}
+
+.nav a:hover {
+	color: $color__link;
+}
+
+// Home Page Navigation Styles
+.nav--homepage {
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+	color: $color__alttext;;
+	.nav__logo h3 {
+		color: $color__alttext;
+	}
+}
+
+// Alternate Nav Styles
+.nav--default {
+	background: $color__footer;
+	color: $color__alttext;
+}
+// Slicknav Plugin Styles
+.slicknav_menu {
+	background:$color__footer;
+	display:none;
+	font-family: $font__text;
+}
+
+.slicknav_btn {
+	background: $color__footer;
+}
+
+.slicknav_nav a:hover {
+	background: $color__link;
+}
+
+// Hero Styles
+.container {
+	background: url('../images/winter-hires.jpg') no-repeat;
+	background-size: cover;
+	box-shadow: 4px 0 8px rgba(0,0,0,0.6);
+	height: 90vh;
+}
+
+.hero {
+	text-align: center;
+}
+
+.hero__title {
+	border: 1px solid rgba(255,255,255,0.6);
+	display: inline-block;
+	font-family:$font__text;
+	color: $color__alttext;
+	margin: 8em auto;
+	padding: 2em 2em 1em 2em;
+	text-align: center;
+	h1 {
+		color:$color__alttext;
+		font-size: 4em;
+		font-family: $font__title;
+	}
+	.hero__intro {
+		letter-spacing: 4px;
+		text-transform: uppercase;
+	}
+}
