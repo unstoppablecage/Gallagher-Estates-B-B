@@ -111,7 +111,7 @@
 				<h3>Collingwood</h3>
 				<form>
 					<input type="email" name="email" placeholder="Enter your email address for promotions & news">
-					<input type="submit" value="SIGN UP">
+					<button type="submit" value="SIGN UP">SIGN UP</button>
 				</form>
 			</div>
 			<p>&copy 2017 Gallagher Estates Bed & Breakfast, LLC. All Rights Reserved</p>
@@ -129,7 +129,10 @@
 	<script src="./js/jquery.slicknav.min.js"></script>
 	<script>
 		$(function(){
-			$('#menu').slicknav();
+				$('#menu').slicknav({
+					label: '',
+					closeOnClock: true
+				});
 		});
 	</script>
 </body>

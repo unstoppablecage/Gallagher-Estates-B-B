@@ -46,21 +46,20 @@ form {
 	width: 50%;
 }
 
-input[type=submit] {
+footer button {
 	background: $color__cta;
 	border: none;
 	color: $color__footer;
 	font-family: $font__title;
-	padding: 0.55rem 0.5rem;
+	padding: 0.25rem 0.7rem;
 	}
 
 input[type=email] {
 	background:$color__footer;
 	border:1px solid rgba(255,255,255,0.6);
-	border-right: none;
 	color: $color__alttext;
 	outline: none;
-	padding: 0.5rem;
+	padding: 0.25rem;
 	width: 100%;
 }
 

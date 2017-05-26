@@ -17,6 +17,11 @@
 		a {
 			color: $color__link;
 		}
+		p {
+			color: $color__alttext;
+			margin-left: 5px;
+			margin-top: 0;
+		}
 	}
 
 	.container {
@@ -111,7 +116,7 @@
 	/* Header Styles*/
 	.container {
 		background-image: url('../images/banner.jpg');
-		height: 40vh;
+		height: 50vh;
 	}
 	.hero__title {
 		margin-top: 1em;
@@ -175,9 +180,22 @@
 			text-align: center;
 		}
 		footer form {
-			width: 85%;
+			width: 90%;
 		}
 		footer h3 {
 			display: none;
 		}
+}
+
+@media screen and (max-width: 320px) {
+	.article__services--type p {
+		max-width: 80%;
+	}
+	.article__feature img {
+		max-width: 300px;
+		height: auto;
+	}
+	::-webkit-input-placeholder {
+		font-size: 0.8em;
+	}
 }
