@@ -4,7 +4,9 @@
 		<meta charset="UTF-8">
 		 <meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>{{ page.title }}</title>
+		<link rel="icon" href="../images/favicon.ico">
 		<style>html {height: 100%;}body,h2,h3,h4,p,ul{margin:0;padding:0}body{font:400 16px/1.5 "Helvetica Neue",Helvetica,Arial,sans-serif;color:#111;background-color:#fdfdfd;-webkit-text-size-adjust:100%;-o-font-feature-settings:"kern" 1;font-feature-settings:"kern" 1;font-kerning:normal}h2,h3,h4,p,ul{margin-bottom:15px}img{max-width:100%;vertical-align:middle}ul{margin-left:30px}h2,h3,h4{font-weight:400}a{text-decoration:none}</style>
+		<link rel="preload" href="stylesheets/main.css" as="style" onload="this.rel='stylesheet'">
 	</head>
 
 	<body>
@@ -52,9 +54,7 @@
 			</div>
 		</footer>
 		<script  src="https://code.jquery.com/jquery-3.2.1.min.js"  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="  crossorigin="anonymous"></script>
-		<script src="./js/jquery.slicknav.min.js"></script>
-		<link rel="icon" href="../images/favicon.ico">
-		<link rel="stylesheet" href="stylesheets/main.css">
+		<script src="./js/jquery.slicknav.min.js" async></script>
 		<script>
 			$(function(){
 				$('#menu').slicknav({
