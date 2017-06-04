@@ -6,9 +6,9 @@
 	font-family: $font__text;
 	font-size: 0.9em;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	margin: 0;
-	padding: 2em 2em 3em 2em;
+	padding: 1.5em 2em 1em;
 	text-transform: uppercase;
 	a {
 		transition: all 0.2s;
@@ -19,17 +19,49 @@
 		font-family: $font__title;
 		text-align: center;
 		h3 {
+			color: $color__alttext;
 			font-size:1.25em;
 		}
 		p {
-			color: #C6C6C6;
-			margin-top: 0;
+			color: $color__link;
+			margin: 0;
 		}
 	}
 	.nav__reservation {
 		color: $color__cta;
 		font-weight:bold;
 	}
+}
+
+.nav__logo--small {
+	display: none;
+	height: 30px;
+	width: auto;
+}
+.nav .toggleNav {
+	color: $color__alttext;
+	display: none;
+	font-size: 1.2em;
+
+}
+
+.nav__submenu {
+	align-self: center;
+	flex-basis: 35%;
+	transition: all 0.5s ease-in-out;
+	ul {
+		display: flex;
+		justify-content: space-around;
+	}
+}
+
+.nav__submenu.open {
+	display: flex;
+	max-height: 100%;
+	opacity:1;
+	padding-top: 1em;
+	visibility: visible;
+
 }
 
 .nav a:hover {
@@ -50,30 +82,22 @@
 	background: $color__footer;
 	color: $color__alttext;
 }
-// Slicknav Plugin Styles
-.slicknav_menu {
-	background:$color__footer;
-	display:none;
-	font-family: $font__text;
-}
-
-.slicknav_btn {
-	background: $color__footer;
-}
-
-.slicknav_nav a:hover {
-	background: $color__link;
-}
 
 // Hero Styles
 .container {
-	background: url('../images/winter-hires.jpg') no-repeat;
+	background: url('../images/winter-hires2.jpg') no-repeat;
 	background-size: cover;
 	box-shadow: 4px 0 8px rgba(0,0,0,0.6);
-	height: 90vh;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
 }
 
 .hero {
+	align-items: flex-start;
+	display: flex;
+	flex: 1;
+	justify-content: center;
 	text-align: center;
 }
 
@@ -82,7 +106,7 @@
 	display: inline-block;
 	font-family:$font__text;
 	color: $color__alttext;
-	margin: 8em auto;
+	margin: 8em;
 	padding: 2em 2em 1em 2em;
 	text-align: center;
 	h1 {

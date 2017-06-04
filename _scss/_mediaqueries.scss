@@ -1,18 +1,17 @@
 // Media Queries Styles
 
+// Smaller Desktop Screen
+@media screen and (max-width: 1420px) {
+	.nav__submenu {
+		flex-basis: 50%;
+	}
+}
+
+
 
 // Tablet Breakpoint
 @media screen and (max-width: 1050px) {
-	/* Navigation and Hero Styles */
-	#menu {
-		display:none;
-	}
-
-	.slicknav_menu {
-		display:block;
-	}
-
-	.nav__logo {
+	/* Navigation and Hero Styles */	.nav__logo {
 		font-family: $font__title;
 		a {
 			color: $color__link;
@@ -23,12 +22,26 @@
 			margin-top: 0;
 		}
 	}
-
-	.container {
-		height: 60vh;
+	.hero {
+		align-items: center;
 	}
-	.hero__title h1 {
-		font-size: 3em;
+	.nav {
+		flex-direction: column;
+	}
+	.nav__submenu {
+		flex: 1;
+		padding: 0;
+		width: 100%;
+		ul {
+			padding-top: 1em;
+		}
+	}
+	.container {
+		height: 80vh;
+	}
+	.hero__title{
+		border: none;
+		margin: 0;
 	}
 
 	/* Article Description Styles*/
@@ -110,14 +123,74 @@
 	}
 }
 
+@media screen and (max-width: 495px) {
+	.container {
+		height: 60vh;
+	}
+	.container__default {
+		margin-top: 4.25em;
+	}
+	// Navigation Styles
+	.nav {
+		background: $color__secondary;
+		border: none;
+		padding:0.5em 1em;
+		position: fixed;
+		width: 100%;
+	}
+	.nav__logo {
+		display: flex;
+		justify-content: space-between;
+		padding: 0 1em;
+		width: 100%;
+		h3 {
+			padding-top: 0.25em;
+		}
+		p {
+			margin-bottom: 0;
+		}
+	}
+	.nav__logo--small {
+		display: block;
+	}
+	.nav__logo--large {
+		display: none;
+	}
+
+	.nav a:hover {
+		color: inherit;
+	}
+	.nav .toggleNav {
+		align-self: center;
+		display: block;
+	}
+	.nav__submenu {
+		visibility: hidden;
+		opacity: 0;
+		max-height: 0;
+		ul {
+			flex-direction: column;
+			padding: 0;
+			li  {
+				padding: 0.5em;
+
+			}
+		}
+	}
+
+	.hero__title {
+		border: none;
+		margin-top: 0;
+		h1 {
+			font-size: 2em;
+		}
+	}
+}
+
 
 // Smartphone Breakpoint
 @media screen and (max-width: 414px) {
 	/* Header Styles*/
-	.container {
-		background-image: url('../images/banner.jpg');
-		height: 50vh;
-	}
 	.hero__title {
 		margin-top: 1em;
 		margin-bottom: 1em;
@@ -200,5 +273,25 @@
 	}
 	::-webkit-input-placeholder {
 		font-size: 0.8em;
+	}
+}
+
+// Landscape Mode
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 736px)
+  and (orientation: landscape) {
+	.container {
+		height: 100vh;
+	}
+	.hero__title {
+		border:none;
+		margin-top: 0;
+		h1 {
+			font-size: 2.5em;
+		}
+		p {
+			margin-top: 0;
+		}
 	}
 }

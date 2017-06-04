@@ -1,6 +1,8 @@
 // Normalize Default Styles
-html, body {
+* {
 	box-sizing: border-box;
+}
+html, body {
 	display: flex;
 	flex-direction: column;
 	padding:0;
